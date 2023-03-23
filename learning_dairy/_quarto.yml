@@ -52,7 +52,7 @@ format:
   html:
     theme: minty
     code-link: true
-    css: style.css
+    css: styles.css
     title-block-banner: "banner.png"
     title-block-style: default
     title-block-categories: false

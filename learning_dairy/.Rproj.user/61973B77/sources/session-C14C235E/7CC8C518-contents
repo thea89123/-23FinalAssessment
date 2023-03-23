@@ -1,0 +1,30 @@
+# Welcome {.unnumbered}
+
+Hello!
+
+Welcome to my learning diary!
+
+## About this book
+
+<p>In Spring 2023, while pursuing my studies at UCL, I authored a book that formed a significant part of my assessment for the course CASA0023, focused on Remote Sensing Cities and Environments. This book is a comprehensive guide on remote sensing principles, their applications, and data analysis using R and Google Earth Engine. I used Quarto Book to edit the book and made sure that all the codes are available on my Github repository as open-source for interested readers. &nbsp; </p>
+
+<p>The book presents a range of topics in the field of remote sensing, including satellite image acquisition and processing, image classification, and change detection. I also discuss various applications of remote sensing in environmental studies, urban planning, and disaster management. To provide readers with hands-on experience, the book includes practical exercises and step-by-step instructions for working with satellite imagery in R and Google Earth Engine. &nbsp; </p>
+
+
+## About me
+<p>I am Yuxi Zheng from Hubei, China, currently studying for an MSc in Urban Spatial Science at University College London (UCL). I completed my undergraduate studies in Landscape Architecture at Beijing Forestry University (BJFU). I am interested in the application of spatial data analysis in urban ecology. I am passionate about contributing to the protection and improvement of our planet's ecology by utilizing a diverse array of spatial data for analysis. With a focus on harnessing the power of technology and data-driven insights, I aim to drive positive change and sustainable solutions for our environment. &nbsp; </p>
+
+#### 
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
+knitr::include_graphics('me.jpg') 
+```
+
+**Contact Information**
+
+Email: ucfnyz0@ucl.ac.uk / yuxi9662@qq.com
+
+Phone numbers: +44 07514272307 / +86 13972521203
+
+## Ackownledgement
+
+Many thanks to Andrew MacLachlan for his help with this book！

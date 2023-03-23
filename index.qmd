@@ -16,7 +16,7 @@ Welcome to my learning diary!
 
 #### 
 ```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE}
-knitr::include_graphics('me.jpg') 
+knitr::include_graphics('me.JPG') 
 ```
 
 **Contact Information**

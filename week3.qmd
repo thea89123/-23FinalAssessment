@@ -1,6 +1,9 @@
 ---
 title: "week3"
 editor: visual
+
+author: "Yuxi Zheng"
+date: "2/3/2023"
 ---
 # Remote sensing data {.unnumbered}
 
@@ -18,7 +21,57 @@ knitr::include_graphics('Correction.png')
 
 ## Application
 
+This study aimed to validate the benefit of fusing imagery from multiple sensors to assess the impact of landscape changes on ecosystem services (ES) and their economic values in the Long County, Shaanxi Province, China. 
 
+The researchers used several landscape metrics to assess the local spatial configuration over 15 years (2004–2019) from fused imageries. They also proposed an equivalent monetary metric for estimating the ES values, which could be used in the whole of China. 
+
+The specific research methodology is shown in the flow chart below：
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Shuangao. Source: [Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing](http://dx.doi.org/10.3390/rs13050851)"}
+knitr::include_graphics('31.jpeg')
+```
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Shuangao. Source: [Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing](http://dx.doi.org/10.3390/rs13050851)"}
+knitr::include_graphics('32.jpeg')
+```
+
+The study found that the spatial distribution of woodland and grassland increased over time, while the distribution of agriculture farmland and unused land decreased. The overall ES values increased (4.34%) under a benefit transfer approach, mainly concerning woodland and grassland. 
+
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Shuangao. Source: [Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing](http://dx.doi.org/10.3390/rs13050851)"}
+knitr::include_graphics('33.jpeg')
+```
+
+The study also highlighted the need for local authorities and environmental practitioners to balance the economic benefits and ecological gains in different landscapes to achieve sustainable development from local to regional scales. The study recommends that the conversion of forest and agricultural land into urban areas must be done through less environmental impact, taking into account the new standards of environmentally friendly cities and smart cities. 
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Shuangao. Source: [Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing](http://dx.doi.org/10.3390/rs13050851)"}
+knitr::include_graphics('34.png')
+```
+
+
+Overall, the study found an improvement in the spatial distribution of landscape types and ES evaluated during the 15 years of the study period, with woodland and grassland accounting for most of the improvement.
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Shuangao. Source: [Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing](http://dx.doi.org/10.3390/rs13050851)"}
+knitr::include_graphics('35.jpeg')
+```
 
 
 ## Reflection
+
+Rapid land use change is a major challenge for environmental management today, requiring the integration of economic and ecological objectives into landscape planning and the search for cost-effective conservation strategies.
+
+Image fusion has the benefit of assessing the impact of landscape change on ecosystem services and economic values, which can help develop better conservation strategies.
+
+By applying multiple landscape metrics and machine learning algorithms to remotely sensed imagery from 2004-2019, this study found an overall improvement in landscape types and ecosystem services in Chang County, but there is still an impact of built-up land on agricultural and grassland land conversion.
+
+By improving the diversity and connectivity of landscape types, species diversity and ecological connectivity can be promoted, which has positive implications for the maintenance and promotion of biome structure.
+
+Governments should balance economic benefits and ecological gains to achieve sustainable development from the local to the regional scale.
+
+In future urban construction, a more environmentally friendly approach should be considered, such as building environmentally friendly cities and smart cities, prioritising the use of clean energy, building energy efficient buildings and expanding green cover to reduce damage to the natural environment.
+
+This study provides important insights into how to assess and protect ecosystem services, and suggests that we should pay more attention to ecological conservation and sustainable development.
+
+Translated with www.DeepL.com/Translator (free version)
+
+Shuangao W, Padmanaban R, Mbanze A A, Silva J M N, Shamsudeen M, Cabral P and Campos F S 2021 Using Satellite Image Fusion to Evaluate the Impact of Land Use Changes on Ecosystem Services and Their Economic Values Remote Sensing 13 851 Online: http://dx.doi.org/10.3390/rs13050851

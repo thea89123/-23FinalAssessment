@@ -2,3 +2,23 @@
 title: "week3"
 editor: visual
 ---
+# Remote sensing data {.unnumbered}
+
+## Summary
+
+### Remote sensing image Correction
+
+Remote sensing image correction refers to the process of performing various correction operations on remote sensing images to make the images reflect surface features and object information more accurately. Correction operations usually include geometric correction, radiometric correction and atmospheric correction to remove distortions and errors in remotely sensed images due to the characteristics of the Earth's surface and atmosphere.
+
+Geometric correction, radiometric correction, and atmospheric correction are commonly used techniques in remote sensing image correction. Geometric correction aims to remove geometric distortions caused by sensor position, terrain relief, and other factors, while radiometric correction aims to normalize the image pixel values to account for sensor and environmental conditions. Atmospheric correction is used to correct for atmospheric effects that can cause inaccuracies in remote sensing data.
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Correction. Source: Yuxi"}
+knitr::include_graphics('Correction.png') 
+```
+
+## Application
+
+
+
+
+## Reflection

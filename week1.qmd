@@ -1,1 +1,130 @@
+---
+title: "week1"
+editor: visual
 
+author: "Yuxi Zheng"
+date: "2/3/2023"
+---
+
+# Week1 Getting started with remote sensing
+
+## Summary
+
+### Remote Sensing
+
+#### Definition and Applications of Remote Sensing
+
+Remote sensing refers to the technology and methods of observing and measuring the Earth's surface using remote sensing platforms such as satellites and airplanes.
+
+Remote sensing technology is widely used in natural resource surveying, environmental monitoring, urban planning, agricultural production, weather forecasting, and other fields, providing important support for sustainable development of human society.
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Satellites. Source: [Industry Tap](https://www.industrytap.com/remote-sensing-sustainable-land-use/33218)"}
+knitr::include_graphics('Satellites.jpg') 
+```
+
+#### sensors and electromagnetic waves
+
+**Types of Sensors Used in Remote Sensing**
+
+| Sensor Type | Sensor Name | Energy Source | Mode          | Information Obtained                              |
+|-------------|-------------|---------------|---------------|---------------------------------------------------|
+| Passive     | Landsat     | Reflected     | Optical       | High-resolution visible and near-infrared images |
+| Passive     | Sentinel    | Reflected     | Optical       | High-resolution visible and near-infrared images |
+| Passive     | MODIS       | Emitted       | Thermal Infrared | Temperature and thermal distribution information |
+| Passive     | ASTER       | Emitted       | Thermal Infrared | Temperature and thermal distribution information |
+| Active      | ALOS        | Emitted       | Radar         | Surface topography and moisture content information |
+| Active      | RADARSAT    | Emitted       | Radar         | Surface topography and moisture content information |
+| Active      | ICESat      | Emitted       | LiDAR         | Surface elevation and 3D information               |
+
+**Electromagnetic Waves in Remote Sensing**
+Electromagnetic waves are the energy that travels through space in the form of electric and magnetic fields, including visible light, infrared radiation, microwave radiation, and radio waves.
+Different types of electromagnetic waves have different wavelengths and frequencies, and can interact with the Earth's surface and atmosphere in different ways, allowing remote sensing sensors to measure various physical properties of the Earth's surface and atmosphere.
+The electromagnetic spectrum is divided into different bands, including the visible band, near-infrared band, shortwave infrared band, thermal infrared band, microwave band, and radio band, each with its own applications in remote sensing.
+
+**Scatters In Resolution**
+
+{{< video https://www.youtube.com/watch?v=lwfJPc-rSXw&t=8s >}}
+
+**Interacting with Earth's surface**
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Scattering. Source: [Julien Chimot, from Bovensmann et al., 2011](https://julien-chimot-science.blog/the-light-energy-source-in-remote-sensing/)"}
+knitr::include_graphics('scattering.jpg') 
+```
+
+### Remote Sensing Data
+
+Remote sensing data refers to information about the Earth's surface and atmosphere that is obtained through remote sensing technologies, such as satellites, airplanes, drones, and ground-based sensors. 
+
+There are several ways to acquire remote sensing data. One approach is to purchase data from commercial providers who offer a range of satellite and aerial imagery products. Another option is to access publicly available data archives, such as those provided by the United States Geological Survey (USGS) or the European Space Agency (ESA).
+
+
+#### Types
+
+| Remote Sensing Data | Description                                                          | Examples         |
+|-------------------------|----------------------------------------------------------------------|------------------|
+| Optical Image Data       | Obtained using optical sensors on remote sensing platforms for high-resolution and multispectral imaging of the Earth's surface. | Landsat, Sentinel |
+| Radar Image Data         | Obtained using radar sensors for imaging of the Earth's surface, providing ground information at night and under cloud cover. | ALOS, RADARSAT   |
+| LiDAR Data               | Obtained using LiDAR sensors for scanning of the Earth's surface, providing ground elevation and 3D information. | LiDAR, ICESat    |
+| Thermal Infrared Data    | Obtained using infrared sensors for thermal imaging of the Earth's surface, providing temperature and thermal distribution information. | MODIS, ASTER     |
+
+#### Resolution Type
+
+| Resolution Type | Description                                 |
+|-----------------|---------------------------------------------|
+| Spatial         | Size of the smallest detectable object      |
+| Spectral        | Number and width of spectral bands          |
+| Radiometric     | Number of bits used to represent the data   |
+| Temporal        | Time interval between image captures        |
+
+
+### Processing and Applications of Remote Sensing Data
+
+Remote sensing data needs to be pre-processed, such as radiometric correction, atmospheric correction, geometric correction, etc., to eliminate the influence of the sensor and environmental factors.
+The applications of remote sensing data include land cover classification, terrain measurement, vegetation index calculation, ocean and lake monitoring, urban construction planning, and other fields.
+
+### Development and Trends of Remote Sensing Technology
+
+Remote sensing technology has gone through multiple stages from single-band to multi-band, low-resolution to high-resolution, and 2D to 3D.
+In the future, remote sensing technology will continue to develop in the direction of multi-source data fusion, high-performance computing, intelligent algorithm application, etc., to better serve the needs of various fields, such as climate change monitoring, disaster response, resource management, and so on.
+
+## Application
+
+This passage discusses a study that examines the relationship between land use and land cover and thermal environment in Belgrade. 
+
+The study used Landsat imagery from 1991 to 2019 to monitor spatiotemporal changes in green spaces and land surface temperature. 
+
+The results showed that there was a fluctuating trend in the normalized difference vegetation index (NDVI) and the normalized difference water index (NDWI), with the highest values recorded in 2019 indicating vegetation recovery in the last decade. There was a significant positive correlation between the spectral vegetation indices and the amount of precipitation during the growing season. 
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Marković. Source: [Monitoring of Spatiotemporal Change of Green Spaces in Relation to the Land Surface Temperature: A Case Study of Belgrade, Serbia Remote Sensing](http://dx.doi.org/10.3390/rs13193846)"}
+knitr::include_graphics('13.png')
+```
+
+The share of vegetated and bare land decreased by 11.74% during the study period, with the most intensive conversion of green and bare land into built-up land cover occurring in the first decade (1991–2000). The reduction in vegetation was associated with an increase in the land surface temperature, indicating a negative correlation between the change in the spectral vegetation indices and change in the LST. 
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Marković. Source: [Monitoring of Spatiotemporal Change of Green Spaces in Relation to the Land Surface Temperature: A Case Study of Belgrade, Serbia Remote Sensing](http://dx.doi.org/10.3390/rs13193846)"}
+knitr::include_graphics('11.jpeg')
+```
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Marković. Source: [Monitoring of Spatiotemporal Change of Green Spaces in Relation to the Land Surface Temperature: A Case Study of Belgrade, Serbia Remote Sensing](http://dx.doi.org/10.3390/rs13193846)"}
+knitr::include_graphics('12.jpeg')
+```
+
+```{r echo=FALSE, out.width = "70%", fig.align='center', cache=FALSE, fig.cap= "Marković. Source: [Monitoring of Spatiotemporal Change of Green Spaces in Relation to the Land Surface Temperature: A Case Study of Belgrade, Serbia Remote Sensing](http://dx.doi.org/10.3390/rs13193846)"}
+knitr::include_graphics('14.jpg')
+```
+
+The study identified the municipalities that were the most affected in each decade, and the findings are relevant for actions targeting an improvement in urban thermal comfort and climate resilience. The passage also highlights the importance of green spaces in enhancing living conditions, contributing to adaptation to climate change, and biodiversity conservation. The study suggests that changes in green spaces in Belgrade were driven by fluctuations in climate factors, as well as human-induced changes in land use and land cover.
+
+## Reflection
+
+Learning about remote sensing sensors, electromagnetic waves, and scattering has provided me with a better understanding of the principles behind remote sensing data acquisition. I now know that remote sensing data can be obtained from various sources, including Sentinel and Landsat satellites, and these data can be processed and analyzed using software such as SNAP, QGIS, and R.
+
+One of the most important concepts I learned is spectral signature, which refers to the unique pattern of reflectance or absorption of electromagnetic radiation for different materials in various wavelengths. This knowledge can be applied to identify different land cover types, such as vegetation, bare land, and urban areas, which can be useful for urban and environmental monitoring and management.
+
+Another useful concept I learned is color composites, which involve combining different spectral bands to create a false-color image that enhances certain features or properties of the scene. This technique can be used to highlight specific land cover types, such as vegetation and water, and can also be used to detect changes in land cover over time.
+
+Moreover, this knowledge can be useful for my future work in improving urban environments, such as analyzing the distribution of land cover and identifying urban green spaces. By utilizing remote sensing data and techniques, I can gain a better understanding of the current state and trends of urban environments and develop targeted interventions to improve their sustainability and livability.
+
+
+
+Marković M, Cheema J, Teofilović A, Čepić S, Popović Z, Tomićević-Dubljević J and Pause M 2021 Monitoring of Spatiotemporal Change of Green Spaces in Relation to the Land Surface Temperature: A Case Study of Belgrade, Serbia Remote Sensing 13 3846 Online: http://dx.doi.org/10.3390/rs13193846

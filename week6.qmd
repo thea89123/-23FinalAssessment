@@ -1,4 +1,124 @@
 ---
 title: "week6"
 editor: visual
+
+author: "Yuxi Zheng"
+date: "2/3/2023"
 ---
+# Classification I  {.unnumbered}
+
+## Summary
+
+### Basics of remote sensing classification
+
+<p>Before learning about remote sensing classification, we need to have some basic knowledge of machine learning.  &nbsp; </p>
+
+```{r echo=FALSE, out.width = "100%", fig.align='center', cache=FALSE, fig.cap= "ClassificationBasic. Source: Yuxi"}
+knitr::include_graphics('machinelearning.png')
+```
+#### Decision Trees
+
+<p>A decision tree is a flowchart-like structure that represents different possible decisions and their possible consequences. In machine learning, decision trees can be used for classification or regression tasks.  &nbsp; </p>
+
+<p>Decision tree classification involves using a decision tree to classify data points into different categories based on their features. The decision tree algorithm uses the features of the data to create a set of rules that can be used to classify new data points.  &nbsp; </p>
+
+<p>Decision tree regression, on the other hand, involves using a decision tree to predict a numerical value for a target variable based on the values of several input variables. The decision tree algorithm creates a model that maps input variables to a predicted output value.  &nbsp; </p>
+
+<p>In both cases, decision trees are trained on a set of labeled data, meaning data with known classifications or target values, and then used to predict classifications or target values for new data points. The quality of the model is evaluated based on its accuracy in predicting classifications or target values for the test data.  &nbsp; </p>
+
+**Classification**
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE, fig.cap= "DecisionTreeClassification. Source: [scikit-learn](https://scikit-learn.org/stable/modules/tree.html)"}
+knitr::include_graphics('irisclasstree.jpeg')
+knitr::include_graphics('class2.png')
+```
+
+**Regression**
+
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE, fig.cap= "DecisionTreeRegression. Source: [scikit-learn](https://scikit-learn.org/stable/modules/tree.html)"}
+knitr::include_graphics('tree_regression.png')
+```
+#### Random Forest
+
+<p>Random Forest builds multiple decision trees and combines their predictions to improve accuracy and reduce overfitting. It is particularly useful for high-dimensional datasets. The algorithm selects a random subset of the training data and a random subset of the input features for each decision tree, and then combines their predictions through a majority vote or average.  &nbsp; </p>
+
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE, fig.cap= "RandomForest. Source: [IBM](https://www.ibm.com/cn-zh/topics/random-forest)"}
+knitr::include_graphics('randomforest.jpeg')
+```
+
+#### Support Vector Machine
+
+<p>Support Vector Machine (SVM) works by finding the optimal hyperplane that maximally separates the data into different classes. The algorithm selects the hyperplane with the largest margin between the classes, which is achieved by finding the support vectors, or the data points closest to the decision boundary. SVM can handle non-linearly separable data by using kernel functions to map the data to a higher dimensional space. &nbsp; </p>
+
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE, fig.cap= "SupportVectorMachine. Source: [SVM](https://baike.baidu.com/item/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/9683835)"}
+knitr::include_graphics('SVM.png')
+```
+
+### Image classification
+
+<p>HImage classification is the task of categorizing an image into a predefined set of classes. This is typically done using machine learning algorithms, such as convolutional neural networks (CNNs), which learn to recognize patterns in images and make predictions based on those patterns. There are several types of image classification methods, including supervised learning, unsupervised learning.  &nbsp; </p>
+
+```{r echo=FALSE, out.width = "55%", fig.align='center', cache=FALSE, fig.cap= "ImageClassification. Source: [youtube](https://www.youtube.com/watch?v=Gz_PsRRxrHM)"}
+knitr::include_graphics('imageclassification.jpeg')
+```
+
+#### Related examples
+
+**classify land-use types**
+
+Zhang et al. (2019) applies image classification to urban land-use classification using remote sensing data. The authors use a combination of deep convolutional neural networks (CNNs) and extreme learning machines (ELMs) to classify land-use types in urban areas. The results show that the proposed method outperforms traditional classification methods in terms of accuracy, and can be used for large-scale land-use mapping and urban planning.
+
+**monitor land cover change**
+
+Lu et al. (2019) uses an object-based convolutional neural network (OB-CNN) to classify land-use types in urban areas using multi-source remote sensing data. The authors demonstrate that the OB-CNN method is effective in capturing the spatial context and spectral information of urban land-use, resulting in higher classification accuracy compared to traditional methods. The results can be used for urban planning and environmental monitoring.
+
+**track environmental changes**
+
+Liu et al. (2020) applies image classification to monitor urban forest cover change using remote sensing data. The authors use an OB-CNN method to classify urban forest cover and track changes over time. The results demonstrate the potential of OB-CNN for accurate and efficient monitoring of urban forest cover change, which can be used for urban planning and environmental conservation.
+
+**Conclusion**
+
+In conclusion, image classification can be applied to remote sensing urban and environmental studies to classify land-use types, monitor land cover change, and track environmental changes over time. The use of deep learning methods, such as CNNs and OB-CNN, can improve classification accuracy and efficiency. These results have important implications for urban planning and environmental management.
+
+
+
+## Application
+
+### Classification Workflow
+
+<p>Here is my application of supervised classification of remotely sensed images in GEE using random forests, and my procedure is as follows:  &nbsp; </p>
+my code link: <https://code.earthengine.google.com/007b0dfe5b99cad35fd48c9adc919eca>
+
+```{r echo=FALSE, out.width = "100%", fig.align='center', cache=FALSE, fig.cap= "ClassificationExampleI. Source: Yuxi"}
+knitr::include_graphics('classification1.png')
+```
+### Classification Output
+
+<p>The results after random forest classification and pixel training and classification, respectively, are obtained as follows:  &nbsp; </p>
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE, fig.cap= "RF. Source: Yuxi"}
+knitr::include_graphics('classified.png')
+```
+
+```{r echo=FALSE, out.width = "60%", fig.align='center', cache=FALSE, fig.cap= "RF_Piexl. Source: Yuxi"}
+knitr::include_graphics('classified_pixel.png')
+```
+
+## Reflection
+
+<p>After learning about the basics of remote sensing classification using machine learning, as well as image classification methods and their applications in remote sensing, urban and environmental domains, I have gained valuable knowledge and insights.  &nbsp; </p>
+
+<p>Firstly, I have learned about the importance of feature selection and extraction in remote sensing classification. Different features, such as spectral, spatial, and textural features, can be used to improve the accuracy of classification results. Machine learning algorithms, such as random forests and support vector machines, can be used to classify remote sensing data based on these features.  &nbsp; </p>
+
+<p>Secondly,I have learned about the applications of image classification in various fields, such as urban planning, land use and land cover mapping, and environmental monitoring. These applications have significant implications for understanding and addressing various environmental and societal issues.  &nbsp; </p>
+
+<p>Moreover, I have gained an understanding of the challenges involved in remote sensing classification, such as the presence of mixed pixels, noise, and the need for ground truth data. These challenges require careful consideration and evaluation when choosing and implementing classification methods. I have reflected on the limitations and biases that can exist in remote sensing data and how these can impact classification accuracy. It is important to be aware of these limitations and to critically evaluate the data and methods used in remote sensing classification.  &nbsp; </p>
+
+
+
+References:
+
+Zhang, W., Jiang, H., & Wu, S. (2019). An urban land-use classification method based on deep convolutional neural network and extreme learning machine. International Journal of Remote Sensing, 40(6), 2236-2258.
+
+Lu, L., Li, Y., Fu, X., & Liu, X. (2019). An object-based convolutional neural network for land-use classification using multi-source remote sensing data. Remote Sensing, 11(8), 888.
+
+Liu, X., Jiao, L., & Guo, Y. (2020). Monitoring urban forest cover change based on object-based convolutional neural network. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, 2652-2660.

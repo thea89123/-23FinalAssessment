@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="description" content="This is my learning diary for the CASA0023 course. I will share my notes, exercises, and reflections on a weekly basis.">
-
-<title>Learning Diary CASA0023 - 6&nbsp; week6</title>
+<meta name="author" content="Yuxi Zheng">
+<meta name="dcterms.date" content="2023-02-03">
+<meta name="description" content="My Journey to Remote Sensing Cities and Environments">
+<title>CASA0023 Learning Diary - 6&nbsp; week6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +21,6 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -38,13 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -62,23 +57,23 @@ ul.task-list li input[type="checkbox"] {
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit"
   }
-}</script>
-
-
+}</script><style>
+    .quarto-title-block .quarto-title-banner {
+      background-image: url(banner.png);
+background-size: cover;
+    }
+    </style>
+<link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo.jpg" alt="" class="navbar-logo">
-    </a>
+    <img src="./logo.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Learning Diary CASA0023</span>
+    <span class="navbar-title">CASA0023 Learning Diary</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -86,14 +81,13 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="./git@github.com:thea89123/casa0023.git"><i class="bi bi-github" role="img" aria-label="Source Code">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/thea89123/casa0023.git"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+<div class="quarto-toggle-container">
                   <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -103,30 +97,60 @@ ul.task-list li input[type="checkbox"] {
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></h1>
+    </nav><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">
+<span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span>
+</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">
+<span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span>
+</h1>
+                  <div>
+        <div class="description">
+          My Journey to Remote Sensing Cities and Environments
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Yuxi Zheng </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 3, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-      <div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto"><div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -180,37 +204,205 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+</div>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li>
+<a href="#classification-i" id="toc-classification-i" class="nav-link active" data-scroll-target="#classification-i">Classification I</a>
+  <ul class="collapse">
+<li>
+<a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">6.1</span>  Summary</a>
+  <ul class="collapse">
+<li><a href="#basics-of-remote-sensing-classification" id="toc-basics-of-remote-sensing-classification" class="nav-link" data-scroll-target="#basics-of-remote-sensing-classification"><span class="toc-section-number">6.1.1</span>  Basics of remote sensing classification</a></li>
+  <li><a href="#image-classification" id="toc-image-classification" class="nav-link" data-scroll-target="#image-classification"><span class="toc-section-number">6.1.2</span>  Image classification</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a>
+  <ul class="collapse">
+<li><a href="#classification-workflow" id="toc-classification-workflow" class="nav-link" data-scroll-target="#classification-workflow"><span class="toc-section-number">6.2.1</span>  Classification Workflow</a></li>
+  <li><a href="#classification-output" id="toc-classification-output" class="nav-link" data-scroll-target="#classification-output"><span class="toc-section-number">6.2.2</span>  Classification Output</a></li>
+  </ul>
+</li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">6.3</span>  Reflection</a></li>
+  </ul>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="classification-i" class="level1 unnumbered"><h1 class="unnumbered">Classification I</h1>
+<section id="summary" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="summary">
+<span class="header-section-number">6.1</span> Summary</h2>
+<section id="basics-of-remote-sensing-classification" class="level3" data-number="6.1.1"><h3 data-number="6.1.1" class="anchored" data-anchor-id="basics-of-remote-sensing-classification">
+<span class="header-section-number">6.1.1</span> Basics of remote sensing classification</h3>
+<p>
+Before learning about remote sensing classification, we need to have some basic knowledge of machine learning. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="machinelearning.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">ClassificationBasic. Source: Yuxi</figcaption><p></p>
+</figure>
 </div>
+</div>
+</div>
+<section id="decision-trees" class="level4" data-number="6.1.1.1"><h4 data-number="6.1.1.1" class="anchored" data-anchor-id="decision-trees">
+<span class="header-section-number">6.1.1.1</span> Decision Trees</h4>
+<p>
+A decision tree is a flowchart-like structure that represents different possible decisions and their possible consequences. In machine learning, decision trees can be used for classification or regression tasks. &nbsp;
+</p>
+<p>
+Decision tree classification involves using a decision tree to classify data points into different categories based on their features. The decision tree algorithm uses the features of the data to create a set of rules that can be used to classify new data points. &nbsp;
+</p>
+<p>
+Decision tree regression, on the other hand, involves using a decision tree to predict a numerical value for a target variable based on the values of several input variables. The decision tree algorithm creates a model that maps input variables to a predicted output value. &nbsp;
+</p>
+<p>
+In both cases, decision trees are trained on a set of labeled data, meaning data with known classifications or target values, and then used to predict classifications or target values for new data points. The quality of the model is evaluated based on its accuracy in predicting classifications or target values for the test data. &nbsp;
+</p>
+<p><strong>Classification</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="irisclasstree.jpeg" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">DecisionTreeClassification. Source: <a href="https://scikit-learn.org/stable/modules/tree.html">scikit-learn</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="class2.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">DecisionTreeClassification. Source: <a href="https://scikit-learn.org/stable/modules/tree.html">scikit-learn</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Regression</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="tree_regression.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">DecisionTreeRegression. Source: <a href="https://scikit-learn.org/stable/modules/tree.html">scikit-learn</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="random-forest" class="level4" data-number="6.1.1.2"><h4 data-number="6.1.1.2" class="anchored" data-anchor-id="random-forest">
+<span class="header-section-number">6.1.1.2</span> Random Forest</h4>
+<p>
+Random Forest builds multiple decision trees and combines their predictions to improve accuracy and reduce overfitting. It is particularly useful for high-dimensional datasets. The algorithm selects a random subset of the training data and a random subset of the input features for each decision tree, and then combines their predictions through a majority vote or average. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="randomforest.jpeg" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">RandomForest. Source: <a href="https://www.ibm.com/cn-zh/topics/random-forest">IBM</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="support-vector-machine" class="level4" data-number="6.1.1.3"><h4 data-number="6.1.1.3" class="anchored" data-anchor-id="support-vector-machine">
+<span class="header-section-number">6.1.1.3</span> Support Vector Machine</h4>
+<p>
+Support Vector Machine (SVM) works by finding the optimal hyperplane that maximally separates the data into different classes. The algorithm selects the hyperplane with the largest margin between the classes, which is achieved by finding the support vectors, or the data points closest to the decision boundary. SVM can handle non-linearly separable data by using kernel functions to map the data to a higher dimensional space. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="SVM.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">SupportVectorMachine. Source: <a href="https://baike.baidu.com/item/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/9683835">SVM</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="image-classification" class="level3" data-number="6.1.2"><h3 data-number="6.1.2" class="anchored" data-anchor-id="image-classification">
+<span class="header-section-number">6.1.2</span> Image classification</h3>
+<p>
+HImage classification is the task of categorizing an image into a predefined set of classes. This is typically done using machine learning algorithms, such as convolutional neural networks (CNNs), which learn to recognize patterns in images and make predictions based on those patterns. There are several types of image classification methods, including supervised learning, unsupervised learning. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="imageclassification.jpeg" class="img-fluid figure-img" style="width:55.0%"></p>
+<p></p><figcaption class="figure-caption">ImageClassification. Source: <a href="https://www.youtube.com/watch?v=Gz_PsRRxrHM">youtube</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="related-examples" class="level4" data-number="6.1.2.1"><h4 data-number="6.1.2.1" class="anchored" data-anchor-id="related-examples">
+<span class="header-section-number">6.1.2.1</span> Related examples</h4>
+<p><strong>classify land-use types</strong></p>
+<p>Zhang et al.&nbsp;(2019) applies image classification to urban land-use classification using remote sensing data. The authors use a combination of deep convolutional neural networks (CNNs) and extreme learning machines (ELMs) to classify land-use types in urban areas. The results show that the proposed method outperforms traditional classification methods in terms of accuracy, and can be used for large-scale land-use mapping and urban planning.</p>
+<p><strong>monitor land cover change</strong></p>
+<p>Lu et al.&nbsp;(2019) uses an object-based convolutional neural network (OB-CNN) to classify land-use types in urban areas using multi-source remote sensing data. The authors demonstrate that the OB-CNN method is effective in capturing the spatial context and spectral information of urban land-use, resulting in higher classification accuracy compared to traditional methods. The results can be used for urban planning and environmental monitoring.</p>
+<p><strong>track environmental changes</strong></p>
+<p>Liu et al.&nbsp;(2020) applies image classification to monitor urban forest cover change using remote sensing data. The authors use an OB-CNN method to classify urban forest cover and track changes over time. The results demonstrate the potential of OB-CNN for accurate and efficient monitoring of urban forest cover change, which can be used for urban planning and environmental conservation.</p>
+<p><strong>Conclusion</strong></p>
+<p>In conclusion, image classification can be applied to remote sensing urban and environmental studies to classify land-use types, monitor land cover change, and track environmental changes over time. The use of deep learning methods, such as CNNs and OB-CNN, can improve classification accuracy and efficiency. These results have important implications for urban planning and environmental management.</p>
+</section></section></section><section id="application" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="application">
+<span class="header-section-number">6.2</span> Application</h2>
+<section id="classification-workflow" class="level3" data-number="6.2.1"><h3 data-number="6.2.1" class="anchored" data-anchor-id="classification-workflow">
+<span class="header-section-number">6.2.1</span> Classification Workflow</h3>
+<p>
+Here is my application of supervised classification of remotely sensed images in GEE using random forests, and my procedure is as follows: &nbsp;
+</p>
+<p>my code link: <a href="https://code.earthengine.google.com/007b0dfe5b99cad35fd48c9adc919eca" class="uri">https://code.earthengine.google.com/007b0dfe5b99cad35fd48c9adc919eca</a></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="classification1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">ClassificationExampleI. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="classification-output" class="level3" data-number="6.2.2"><h3 data-number="6.2.2" class="anchored" data-anchor-id="classification-output">
+<span class="header-section-number">6.2.2</span> Classification Output</h3>
+<p>
+The results after random forest classification and pixel training and classification, respectively, are obtained as follows: &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="classified.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">RF. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="classified_pixel.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">RF_Piexl. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="reflection" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="reflection">
+<span class="header-section-number">6.3</span> Reflection</h2>
+<p>
+After learning about the basics of remote sensing classification using machine learning, as well as image classification methods and their applications in remote sensing, urban and environmental domains, I have gained valuable knowledge and insights. &nbsp;
+</p>
+<p>
+Firstly, I have learned about the importance of feature selection and extraction in remote sensing classification. Different features, such as spectral, spatial, and textural features, can be used to improve the accuracy of classification results. Machine learning algorithms, such as random forests and support vector machines, can be used to classify remote sensing data based on these features. &nbsp;
+</p>
+<p>
+Secondly,I have learned about the applications of image classification in various fields, such as urban planning, land use and land cover mapping, and environmental monitoring. These applications have significant implications for understanding and addressing various environmental and societal issues. &nbsp;
+</p>
+<p>
+Moreover, I have gained an understanding of the challenges involved in remote sensing classification, such as the presence of mixed pixels, noise, and the need for ground truth data. These challenges require careful consideration and evaluation when choosing and implementing classification methods. I have reflected on the limitations and biases that can exist in remote sensing data and how these can impact classification accuracy. It is important to be aware of these limitations and to critically evaluate the data and methods used in remote sensing classification. &nbsp;
+</p>
+<p>References:</p>
+<p>Zhang, W., Jiang, H., &amp; Wu, S. (2019). An urban land-use classification method based on deep convolutional neural network and extreme learning machine. International Journal of Remote Sensing, 40(6), 2236-2258.</p>
+<p>Lu, L., Li, Y., Fu, X., &amp; Liu, X. (2019). An object-based convolutional neural network for land-use classification using multi-source remote sensing data. Remote Sensing, 11(8), 888.</p>
+<p>Liu, X., Jiao, L., &amp; Guo, Y. (2020). Monitoring urban forest cover change based on object-based convolutional neural network. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, 2652-2660.</p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -230,121 +422,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -457,9 +534,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./week5.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></span>
       </a>          

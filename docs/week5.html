@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="description" content="This is my learning diary for the CASA0023 course. I will share my notes, exercises, and reflections on a weekly basis.">
-
-<title>Learning Diary CASA0023 - 5&nbsp; week5</title>
+<meta name="author" content="Yuxi Zheng">
+<meta name="dcterms.date" content="2023-02-03">
+<meta name="description" content="My Journey to Remote Sensing Cities and Environments">
+<title>CASA0023 Learning Diary - 5&nbsp; week5</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,8 +20,70 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -38,13 +99,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -62,59 +120,100 @@ ul.task-list li input[type="checkbox"] {
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit"
   }
-}</script>
-
-
+}</script><style>
+    .quarto-title-block .quarto-title-banner {
+      background-image: url(banner.png);
+background-size: cover;
+    }
+    </style>
+<link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo.jpg" alt="" class="navbar-logo">
-    </a>
+    <img src="./logo.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Learning Diary CASA0023</span>
+    <span class="navbar-title">CASA0023 Learning Diary</span>
     </a>
   </div>
-          <div class="quarto-toggle-container ms-auto">
-              <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/thea89123/casa0023.git"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
 </a>
-          </div>
-          <div id="quarto-search" class="" title="Search"></div>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></h1>
+    </nav><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">
+<span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span>
+</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">
+<span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span>
+</h1>
+                  <div>
+        <div class="description">
+          My Journey to Remote Sensing Cities and Environments
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Yuxi Zheng </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 3, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-      <div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto"><div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,37 +267,286 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+</div>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+<li>
+<a href="#google-earth-engine-basic-knowledge" id="toc-google-earth-engine-basic-knowledge" class="nav-link active" data-scroll-target="#google-earth-engine-basic-knowledge">Google Earth Engine Basic Knowledge</a>
+  <ul class="collapse">
+<li>
+<a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">5.1</span>  Summary</a>
+  <ul class="collapse">
+<li><a href="#google-earth-engine-introduction" id="toc-google-earth-engine-introduction" class="nav-link" data-scroll-target="#google-earth-engine-introduction"><span class="toc-section-number">5.1.1</span>  Google Earth Engine Introduction</a></li>
+  <li><a href="#difference-between-client-and-server" id="toc-difference-between-client-and-server" class="nav-link" data-scroll-target="#difference-between-client-and-server"><span class="toc-section-number">5.1.2</span>  Difference between Client and Server</a></li>
+  <li><a href="#gee-api" id="toc-gee-api" class="nav-link" data-scroll-target="#gee-api"><span class="toc-section-number">5.1.3</span>  GEE API</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">5.2</span>  Application</a>
+  <ul class="collapse">
+<li><a href="#gee-basic-operations" id="toc-gee-basic-operations" class="nav-link" data-scroll-target="#gee-basic-operations"><span class="toc-section-number">5.2.1</span>  GEE Basic operations</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="toc-section-number">5.2.2</span>  Examples</a></li>
+  </ul>
+</li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">5.3</span>  Reflection</a></li>
+  </ul>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="google-earth-engine-basic-knowledge" class="level1 unnumbered"><h1 class="unnumbered">Google Earth Engine Basic Knowledge</h1>
+<section id="summary" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="summary">
+<span class="header-section-number">5.1</span> Summary</h2>
+<section id="google-earth-engine-introduction" class="level3" data-number="5.1.1"><h3 data-number="5.1.1" class="anchored" data-anchor-id="google-earth-engine-introduction">
+<span class="header-section-number">5.1.1</span> Google Earth Engine Introduction</h3>
+<p>
+Google Earth Engine is a cloud-based platform for processing and analyzing geospatial data. It combines vast repositories of satellite imagery and other geospatial data with powerful processing tools to enable users to perform complex analysis and generate dynamic visualizations of the Earth’s surface. With its ability to process petabytes of data quickly and efficiently, Google Earth Engine has become an essential tool for scientists, researchers, policymakers, and anyone who is interested in understanding our planet and its environment. Its innovative features and accessibility have made it an important player in the fields of ecology, conservation, urban planning, and disaster response. Google Earth Engine is a game-changer in the world of geospatial analysis and has the potential to transform the way we understand and interact with the world around us. &nbsp;
+</p>
+</section><section id="difference-between-client-and-server" class="level3" data-number="5.1.2"><h3 data-number="5.1.2" class="anchored" data-anchor-id="difference-between-client-and-server">
+<span class="header-section-number">5.1.2</span> Difference between Client and Server</h3>
+<p><strong>Difference</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead><tr class="header">
+<th>Aspects</th>
+<th>Client</th>
+<th>Server</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Function</td>
+<td>Interact and visualize geospatial data</td>
+<td>Provide computational power and storage</td>
+</tr>
+<tr class="even">
+<td>Usage</td>
+<td>Basic analysis and visualization</td>
+<td>Access and process data programmatically</td>
+</tr>
+<tr class="odd">
+<td>Interface</td>
+<td>Web-based interactive</td>
+<td>No graphical interface</td>
+</tr>
+<tr class="even">
+<td>Processing</td>
+<td>Client-side</td>
+<td>Server-side with distributed computing</td>
+</tr>
+</tbody>
+</table>
+<strong>Client</strong>
+<p>
+Here are some examples of projects where GEE applications have been implemented. &nbsp;
+</p>
+<p><a href="https://github.com/philippgaertner/awesome-earth-engine-apps">List of awesome GEE apps</a></p>
+<p><a href="https://gaertnerp.users.earthengine.app/view/europe-air-quality-winner#cloud=10;scale=15000;ranking=absolute%20difference%20(%CE%BCmol%2Fm%C2%B2);startdate=2020-03-01;enddate=2020-04-01">Air quality example</a></p>
+<p><a href="https://khaledalshamaa.users.earthengine.app/view/modis-ndvi-slider">NDVI slider example</a></p>
+<p>(Source: Andrew Maclachlan)</p>
+<strong>Server</strong>
+<p>
+GEE Server provides APIs for developers to access and process data programmatically. &nbsp;
+</p>
+</section><section id="gee-api" class="level3" data-number="5.1.3"><h3 data-number="5.1.3" class="anchored" data-anchor-id="gee-api">
+<span class="header-section-number">5.1.3</span> GEE API</h3>
+<section id="javascript" class="level4" data-number="5.1.3.1"><h4 data-number="5.1.3.1" class="anchored" data-anchor-id="javascript">
+<span class="header-section-number">5.1.3.1</span> JavaScript</h4>
+<p>
+Gee coding based on JavaScript, this is almost all of the Javascript you need to know: &nbsp;
+</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> number <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> string <span class="op">=</span> <span class="st">'Hello, World!'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> list <span class="op">=</span> [<span class="fl">1.23</span><span class="op">,</span> <span class="dv">8</span><span class="op">,</span> <span class="op">-</span><span class="dv">3</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(list[<span class="dv">2</span>])</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> dictionary <span class="op">=</span> {</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">a</span><span class="op">:</span> <span class="st">'Hello'</span><span class="op">,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">b</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">c</span><span class="op">:</span> <span class="fl">0.1343</span><span class="op">,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">d</span><span class="op">:</span> list</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(dictionary<span class="op">.</span><span class="at">b</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(number<span class="op">,</span> string<span class="op">,</span> list<span class="op">,</span> dictionary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>(Source: Andrew Maclachlan)</p>
+<p>
+Some of the basic geospatial data processing steps in GEE and the functions that go into them are as follows: &nbsp;
+</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Geospatial Processing Steps</th>
+<th style="text-align: left;">Geospatial Processing Functions</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Image</td>
+<td style="text-align: left;">band math, clip, convolution, neighborhood, selection</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Image Collection</td>
+<td style="text-align: left;">map, aggregate, filter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Feature</td>
+<td style="text-align: left;">buffer, centroid, intersection, union, transform</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Feature Collection</td>
+<td style="text-align: left;">aggregate, filter, flatten, merge, sort</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Filter</td>
+<td style="text-align: left;">by bounds, within distance, date, day-of-year, metadata</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Reducer</td>
+<td style="text-align: left;">mean, linearRegression, percentile, histogram</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Join</td>
+<td style="text-align: left;">simple, inner, outer, inverted</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kernel</td>
+<td style="text-align: left;">square, circle, gaussian, sobel, kirsch</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Export</td>
+<td style="text-align: left;">to geotiff, to video, to TensorFlow, to map tiles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Machine Learning</td>
+<td style="text-align: left;">CART, random forests, baes, SVM, kmeans, cobweb</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Projection</td>
+<td style="text-align: left;">transform, translate, scale</td>
+</tr>
+</tbody>
+</table>
+<p>Common basic operations and syntax. Source: <a href="https://www.youtube.com/watch?v=I-wFYm4Hnhg">youtube.com/watch?v=I-wFYm4Hnhg</a></p>
+</section><section id="gee-code-editor" class="level4" data-number="5.1.3.2"><h4 data-number="5.1.3.2" class="anchored" data-anchor-id="gee-code-editor">
+<span class="header-section-number">5.1.3.2</span> GEE Code Editor</h4>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure"><p><img src="Code_editor.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">GEE Code Editor. Source: <a href="https://code.earthengine.google.com/">code.earthengine.google.com/</a></figcaption><p></p>
+</figure>
 </div>
+</div>
+</div>
+</section></section></section><section id="application" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="application">
+<span class="header-section-number">5.2</span> Application</h2>
+<section id="gee-basic-operations" class="level3" data-number="5.2.1"><h3 data-number="5.2.1" class="anchored" data-anchor-id="gee-basic-operations">
+<span class="header-section-number">5.2.1</span> GEE Basic operations</h3>
+<p>
+Here are some of the basic operations I perform in gee, including loading image data, scaling images, mosaicing images, clipping images, and texture analysis, pca analysis, etc. &nbsp;
+</p>
+<p>my code link: <a href="https://code.earthengine.google.com/2d91d811e683d25ff8f3e71a16a8046c" class="uri">https://code.earthengine.google.com/2d91d811e683d25ff8f3e71a16a8046c</a></p>
+<p><strong>A series of image enhancement processes</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="imageenhance.JPG" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">ImageEnhance. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>clipping images</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="clip.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">ImageEnhance. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>texture analysis</strong></p>
+<p>
+GLCM texture analysis describes the texture information in an image by calculating a matrix of co-occurrence of the grey levels of pixels around the same pixel. This texture information can in turn be used to reflect the surface texture, shape, size and other features of the feature, thus providing the base data for subsequent analysis and applications. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="texture.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">ImageEnhance. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>pca analysis</strong></p>
+<p>
+Principal component analysis (PCA) was performed on a GLCM (grey scale co-occurrence matrix) image of India using Google Earth Engine (GEE) with the following process: &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="Principal component analysis (PCA) of GLCM image in GEE.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">ImageEnhance. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>
+By performing PCA on a GLCM image of India, we can identify the principal components that explain the most variance in the image. These components can then be used to create a new image that captures the essential features of the original image while removing any noise or redundant information.And it helps to reduce the dimensionality of large datasets. &nbsp;
+</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="PCA_india.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">ImageEnhance. Source: Yuxi</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="examples" class="level3" data-number="5.2.2"><h3 data-number="5.2.2" class="anchored" data-anchor-id="examples">
+<span class="header-section-number">5.2.2</span> Examples</h3>
+<strong>Texture Analysis</strong>
+<p>
+Li et al.&nbsp;(2019) used GEE to perform texture analysis on Sentinel-2 imagery for mapping vegetation cover in the Tibetan Plateau. They applied gray-level co-occurrence matrix (GLCM) and local binary patterns (LBP) to extract texture features from the satellite imagery. Then, they used a random forest algorithm to classify the vegetation cover based on these texture features. The results showed that texture analysis improved the classification accuracy compared to using spectral bands alone. This study suggests that texture analysis can be a useful tool for mapping vegetation cover in high-altitude areas. &nbsp;
+</p>
+<strong>Principal Component Analysis</strong>
+<p>
+Gao et al.&nbsp;(2019) used GEE to perform PCA on Sentinel-2 imagery for mapping land cover in the Three Gorges Reservoir Area, China. They applied PCA to reduce the dimensionality of the multivariate data and extract the most important information. Then, they used a support vector machine (SVM) algorithm to classify the land cover based on the principal components. The results showed that PCA improved the classification accuracy compared to using all the spectral bands. This study suggests that PCA can be a useful tool for mapping land cover in complex areas with diverse land cover types. &nbsp;
+</p>
+<strong>Conclusion</strong>
+<p>
+In conclusion, texture analysis and PCA are powerful tools for analyzing satellite imagery in urban or ecological environments. Texture analysis can extract spatial patterns and improve classification accuracy, while PCA can reduce dimensionality and extract the most important information. By using these techniques, researchers can better understand and manage urban or ecological environments, ultimately contributing to the protection and preservation of these areas. &nbsp;
+</p>
+</section></section><section id="reflection" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="reflection">
+<span class="header-section-number">5.3</span> Reflection</h2>
+<p>
+In learning to use Google Earth Engine (GEE), I have found that it has many advantages. Firstly, GEE provides easy access to data and processing tools, making it easy for users to work with remote sensing data in the cloud without having to download and store large amounts of data locally. Secondly, GEE provides a wealth of remote sensing data, tools and algorithms that users can write code in JavaScript to use for data analysis and visualisation. In addition, GEE’s code is sharable, which allows users to share their code and collaborate with others on data analysis and model building. Finally, GEE supports large-scale data processing and distributed computing, allowing users to work with large amounts of data more efficiently. &nbsp;
+</p>
+<p>
+During my studies, I learnt a lot about GEE operations, some of which include data acquisition, data pre-processing, image analysis and visualisation. For example, in data acquisition, I learnt how to acquire remote sensing data such as Sentinel-2, Landsat and MODIS from the GEE data repository and load them into code for analysis. In data pre-processing, I learnt how to perform pre-processing operations such as image cropping, image stitching, image reprojection and image de-clouding. In image analysis, I learnt how to perform operations such as remote sensing classification, texture analysis and principal component analysis. &nbsp;
+</p>
+<p>
+In practice, I found that sometimes the code execution did not work or the analysis results were not as expected, when I would try to review the code and data to find out what might have gone wrong, and debug and improve it. At the same time, I also think about why things are going wrong and try to understand the root of the problem so that I can better avoid such problems in the future. &nbsp;
+</p>
+<p>
+I agree that GEE is a powerful tool for analyzing remote sensing data, and it offers many advantages over traditional methods such as R or SNAP. However, I also believe that there are certain limitations to GEE that need to be addressed. For instance, while GEE can handle large datasets, it requires a stable internet connection, which may not be available in some areas. Additionally, GEE is a cloud-based platform, which means that the user has little control over the hardware and software used for processing the data. This could potentially lead to issues with data security and privacy. &nbsp;
+</p>
+<p>Li, Z., Feng, X., Zhang, L., Lv, G., Zhou, X., &amp; Liu, Q. (2019). Mapping Vegetation Cover in the Tibetan Plateau Using Texture Analysis of Sentinel-2 Imagery. Remote Sensing, 11(15), 1817.</p>
+<p>Gao, Y., Zhang, Y., He, M., &amp; Wu, J. (2019). Mapping Land Cover in the Three Gorges Reservoir Area with Sentinel-2 Imagery Using Principal Component Analysis and Support Vector Machine. Remote Sensing, 11(23), 2829.</p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -218,121 +566,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -445,9 +678,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./week4.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week4</span></span>
       </a>          

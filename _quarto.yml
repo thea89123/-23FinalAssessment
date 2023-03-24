@@ -41,8 +41,6 @@ book:
     - week6.qmd
     - week7.qmd
     - week8.qmd
-    - summary.qmd
-    - references.qmd
     
   reader-mode: true
 bibliography: references.bib

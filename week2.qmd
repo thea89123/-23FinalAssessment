@@ -1,4 +1,16 @@
 ---
 title: "week2"
 editor: visual
+
+author: "Yuxi Zheng"
+date: "2/3/2023"
 ---
+
+## Week 2
+
+In week 2, we have learnt concepts of Xanringan and Quarto.
+
+### Xaringan
+
+```{r xaringan_embed, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://thea89123.github.io/_/", ratio = "4:3")
